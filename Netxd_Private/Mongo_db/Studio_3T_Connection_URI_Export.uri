@@ -1,0 +1,5 @@
+// Connections Exported from Studio 3T -- https://studio3t.com/
+// Exported on 17-Aug-2023 11:47:05 am
+
+// Cloud_DB
+mongodb+srv://userone@cluster0.9eqsnyg.mongodb.net/admin?retryWrites=true&replicaSet=atlas-w6u9hs-shard-0&readPreference=primary&srvServiceName=mongodb&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=Cloud_DB&3t.databases=admin&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true&3t.sslTlsVersion=TLS
