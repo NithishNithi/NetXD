@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option go_package = "github.com/kiran-blockchain/netxd-go-advanced/grpc-demo/helloworld";
+
+// The greeting service definition.
+
+service Greeting_Customer{
+    rpc AddCustomer(AddCustomerDetails) returns (CustomerResponse);
+    rpc GetCustomer(Empty) returns (Customerlist);
+}
+message AddCustomerDetails {
+    string id = 1;
+    string name = 2 ;
+    string age = 3;
+}
+message CustomerResponse {
+    string id = 1;
+}
+message Empty {
+}
+message Customerlist {
+    repeated AddCustomerDetails tasks1 =1;
+}
