@@ -1,14 +1,15 @@
 package main
 
 import (
-	hw "Grpc/helloworld"
+	hw "GRPC_DEMO2/helloworld"
 	"context"
 	"fmt"
 	"net"
-	
+
 	"sync"
+
 	"github.com/google/uuid"
-	
+
 	"google.golang.org/grpc"
 )
 
@@ -23,8 +24,8 @@ func (s *server) AddCustomerDetails(ctx context.Context, req *hw.AddCustomerDeta
 	defer s.mutex.Unlock()
 
 	cusID := uuid.New().String() // Generate a new UUID
-    req.Id = cusID
-    s.details[cusID] = req
+	req.Id = cusID
+	s.details[cusID] = req
 	return &hw.CustomerResponse{Id: cusID}, nil
 }
 
@@ -36,7 +37,7 @@ func (s *server) GetCustomer(ctx context.Context, req *hw.Empty) (*hw.Customerli
 	for _, i := range s.details {
 		temp = append(temp, i)
 	}
-	return &hw.Customerlist{Tasks1:temp},nil
+	return &hw.Customerlist{Tasks1: temp}, nil
 
 }
 
