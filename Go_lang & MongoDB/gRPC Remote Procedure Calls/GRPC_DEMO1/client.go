@@ -16,7 +16,7 @@ func main(){
 	}
 	defer conn.Close()
 	client := hw.NewTaskServiceClient(conn)
-	task := &hw.Task{
+	task := &hw.Tasconk{
         Title: "Buy groceries",
     }
     addResp, err := client.AddTask(context.Background(), task)

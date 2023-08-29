@@ -19,5 +19,5 @@ message CustomerResponse {
 message Empty {
 }
 message Customerlist {
-    repeated AddCustomerDetails tasks1 =1;
+    repeated AddCustomerDetails tasks1 = 1;
 }
